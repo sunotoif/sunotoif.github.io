@@ -7,16 +7,17 @@
 }
 
 body {
-    font-family: "Inter", sans-serif!important; 
+    font-family: "Inter", sans-serif!important;
+    background: url(/assets/img/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 nav#navbar-top {
     min-height: 47px;
     font-size: 12px;
-}
-
-nav#navbar-main {
-    border-bottom: 1px solid lightgrey;
 }
 
 .white-text {
