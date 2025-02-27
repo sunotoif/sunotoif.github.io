@@ -19,6 +19,10 @@ nav#navbar-main {
     border-bottom: 1px solid lightgrey;
 }
 
+.midnight-blue-text {
+    color: rgb(15, 41, 64)!important;
+}
+
 .white-text {
     color: white!important;
 }

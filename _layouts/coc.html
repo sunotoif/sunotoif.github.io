@@ -10,7 +10,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
 
-    <body class="setfont">
+    <body class="setfont d-flex flex-column vh-100">
 
         <!-- Body Start -->
 
@@ -18,8 +18,180 @@
         {% include navigation.html %}
         
         <!-- Content -->
+        <div class="container mt-5">
+
+            <h2 class="mb-3">Command Structure</h2>
+            <h4>Career Ladder and Responsibilities</h4>
+
+            <p>The LSPD follows two types of advancement programs. The first is through promotions, and the second is through special assignments.</p>
+
+            <div class="d-flex align-items-start mt-2">
+                <div class="list-group list-group-flush flex-column nav-pills me-4 fs-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="list-group-item mb-3 active" id="v-pills-patrol-tab" data-bs-toggle="pill" data-bs-target="#v-pills-patrol" type="button" role="tab" aria-controls="v-pills-patrol" aria-selected="true">Patrol</button>
+                  <button class="list-group-item mb-3" id="v-pills-supervisors-tab" data-bs-toggle="pill" data-bs-target="#v-pills-supervisors" type="button" role="tab" aria-controls="v-pills-supervisors" aria-selected="false">Supervisors</button>
+                  <button class="list-group-item mb-3" id="v-pills-command-tab" data-bs-toggle="pill" data-bs-target="#v-pills-command" type="button" role="tab" aria-controls="v-pills-command" aria-selected="false">Command</button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+
+                  <div class="tab-pane fade show active" id="v-pills-patrol" role="tabpanel" aria-labelledby="v-pills-patrol-tab" tabindex="0">
+                    <div style="border-bottom: 1px solid darkblue">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img class="rounded" width="52px" height="64px" src="/assets/img/badge.webp">
+                            </div>
+                            <div class="col-md-11 my-auto">
+                                <h3>POLICE CADET</h3>
+                            </div>
+                        </div>
+
+                        <p class="mt-2">The first step in the career ladder with the Los Santos Police Department is Police Cadet. 
+                            It is the entry-level classification given to all LSPD officers upon entering the police academy. 
+                            For a duration of time in the academy and on-field training, officers are taught criminal law, human relations, and report writing.</p>
+
+                        <p>In addition, they are trained in tactics, firearms, and driving. Physical fitness and self-defense play a big part in Academy training. 
+                            A Police Cadet will advance to Probationary Officer upon successful completion of his/her training period with Training Officers.</p>
+                    </div>
+
+                    <div class="mt-3" style="border-bottom: 1px solid darkblue">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img class="rounded" width="52px" height="64px" src="/assets/img/badge.webp">
+                            </div>
+                            <div class="col-md-11 my-auto">
+                                <h3>PROBATIONARY OFFICER</h3>
+                            </div>
+                        </div>
+
+                        <p class="mt-2">After graduating from the training phase, a Probationary Officer is assigned to a patrol duties within the City of Los Santos where they must utilize all the knowledge and tactics learned during the training period.</p>
+
+                        <p>Probationary Officers are cleared for solo patrol and conduct duties as would a regular officer.</p>
+    
+                    </div>
+
+                    <div class="mt-3" style="border-bottom: 1px solid darkblue">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img class="rounded" width="52px" height="64px" src="/assets/img/badge.webp">
+                            </div>
+                            <div class="col-md-11 my-auto">
+                                <h3>OFFICER</h3>
+                            </div>
+                        </div>
+
+                        <p class="mt-2">After graduating from the probationary phase, an Officer is granted the privilege of participating in certifications and divisions.</p>
+    
+                        <p>An Officer has demonstrated the compentency and dedicated to their department.</p>
+    
+                    </div>
+
+                    <div class="my-3">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img class="rounded" width="52px" height="64px" src="/assets/img/badge.webp">
+                            </div>
+                            <div class="col-md-11 my-auto">
+                                <h3>SENIOR OFFICER</h3>
+                            </div>
+                        </div>
+
+                        <p class="mt-2">A tenured officer. Senior Officers are experienced officers with more seniority than their Officer counterpart.</p>
+    
+                        <p>Senior Officer is a preparatory position that allows officers to demonstrate leadership capabilities. Senior Officer is a stepping stone to the role of a Supervisor.</p>
+    
+                    </div>
+
+                  </div>
+                  
+                  <div class="tab-pane fade" id="v-pills-supervisors" role="tabpanel" aria-labelledby="v-pills-supervisors-tab" tabindex="0">
+                    <p><i>The backbone of the Police Department.</i></p>
+
+                    <div class="my-3">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img class="rounded" width="52px" height="64px" src="/assets/img/badge.webp">
+                            </div>
+                            <div class="col-md-11 my-auto">
+                                <h3>CORPORAL</h3>
+                            </div>
+                        </div>
+
+                        <p class="mt-2">Corporals are the supervisors of the department. As an entry-level command position, this role serves as the primary position for monitoring and assisting officers on patrol.</p>
+    
+                        <p>Corporals are the first line of the Chain of Command, answering questions patrol officers may have, as well as escalating issues up the command structure that they cannot handle.</p>
+
+                        <p>Corporals are also the first ranks within the Command Structure to start leading certifications and divisions.</p>
+
+                        <p>Corporal is a rank given to officers who have shown compentency is leading scenes, commanding officers, and an overall prowess in leadership.</p>
+                    </div>
+
+                  </div>
+
+                  <div class="tab-pane fade" id="v-pills-command" role="tabpanel" aria-labelledby="v-pills-command-tab" tabindex="0">
+                    <p>The Command team is split into two categories: Command and High Command.</p>
+
+                    <div class="mt-3" style="border-bottom: 1px solid darkblue">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img class="rounded" width="52px" height="64px" src="/assets/img/badge.webp">
+                            </div>
+                            <div class="col-md-11 my-auto">
+                                <h3>SERGEANT</h3>
+                            </div>
+                        </div>
+
+                        <p class="mt-2">Sergeants are the primary member of command that aid in patrols and supervise entire shifts.</p>
+
+                        <p>Much like a department manager, a Sergeant supervises a squad or detail of Police Officers and/or civilian employees. 
+                            A Sergeant is required to provide instruction to assigned staff in the operation of their required duties.</p>
+                            
+                        <p>The basic capacity of a Sergeant is field supervision, but administrative and specialized assignments are also available. 
+                            Some Sergeants perform initial and follow-up investigation of crimes and perform surveillance work to detect or prevent crime.</p>
+                    </div>
+
+                    <div class="mt-3" style="border-bottom: 1px solid darkblue">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img class="rounded" width="52px" height="64px" src="/assets/img/badge.webp">
+                            </div>
+                            <div class="col-md-11 my-auto">
+                                <h3>LIEUTENANT</h3>
+                            </div>
+                        </div>
+
+                        <p class="mt-2">After serving as a Sergeant, you are eligible to promote to the next classification on the ladder upon demonstration of excellent leadership and excelling at your responsibilites. 
+                            Similar to a Second Level Manager for a large corporation, a Lieutenant manages, plans, organizes, and directs the work of both sworn and civilian employees engaged in the operation of an assigned watch 
+                            or a 24-hour team in a police division or an investigational unit or detail.</p>
+
+                        <p>Lieutenants are typically in-charge of a specialized division or section, where they must apply sound supervisory principles and techniques to build and maintain an effective work force.</p>
+                    </div>
+
+                    <div class="my-3">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img class="rounded" width="52px" height="64px" src="/assets/img/badge.webp">
+                            </div>
+                            <div class="col-md-11 my-auto">
+                                <h3>SENIOR OFFICER</h3>
+                            </div>
+                        </div>
+
+                        <p class="mt-2">A tenured officer. Senior Officers are experienced officers with more seniority than their Officer counterpart.</p>
+    
+                        <p>Senior Officer is a preparatory position that allows officers to demonstrate leadership capabilities. Senior Officer is a stepping stone to the role of a Supervisor.</p>
+    
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+
+
+        </div>
 
         <!-- Body End -->
+
+        {% include footer.html %}
  
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
